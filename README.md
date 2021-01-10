@@ -35,6 +35,5 @@ If you discover a security vulnerability within this package, please open an iss
 
 ## License
 
-- [MIT](LICENSE) © [galperins4](https://github.com/galperins4)
 - [MIT](LICENSE) © [geopsllc](https://github.com/geopsllc)
 
