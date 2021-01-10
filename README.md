@@ -17,7 +17,7 @@ nano config.py
 This is an ARK Vote Reward Calculator.
 - Supports Core v2+.
 - Requires Python 3.6.7 or above - native on Ubuntu 18.04.
-- It is async coded so most api calls are made almost simultaneously.
+- Async coded so most api calls are made almost simultaneously.
 
 ## Changelog
 ### 0.1
