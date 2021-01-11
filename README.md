@@ -10,14 +10,14 @@ bash install.sh
 nano config.py
 ```
 - change config.py to adjust deelgates and sharing percentages
-- test the script by running ```python3 delcheck.py vote_amount```
+- run with ```python3 delcheck.py vote_amount```
 
 ## General
 
 This is an ARK Vote Reward Calculator.
 - Supports Core v2+.
 - Requires Python 3.6.7 or above - native on Ubuntu 18.04.
-- Async coded so most api calls are made almost simultaneously.
+- Async coded so api calls are made almost simultaneously.
 
 ## Changelog
 ### 0.1
@@ -36,4 +36,3 @@ If you discover a security vulnerability within this package, please open an iss
 ## License
 
 - [MIT](LICENSE) © [geopsllc](https://github.com/geopsllc)
-
