@@ -16,7 +16,7 @@ delegates = {
     'kaos':85,
     'superskeuo':80,
     'arktoshi':75,
-    'dated':70
+    'goose':75
 }
 
 # Network API
