@@ -1,5 +1,9 @@
+# Use static list below or dutch teams's sharing API (True/False)
+use_api = False
+
 # Delegate Names and %
 # Leave only the delegates that you want to check!
+# This list is only used if use_api is set to False!
 delegates = {
     'geops':80,
     'deadlock':80,
@@ -22,3 +26,6 @@ delegates = {
 
 # Network API
 api = 'https://explorer.ark.io/api'
+
+# Sharing API
+sapi = 'https://arkapi.westeurope.cloudapp.azure.com/delegates'

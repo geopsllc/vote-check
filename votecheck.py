@@ -6,6 +6,7 @@ import sys
 import json
 import asyncio
 import aiohttp
+import requests
 
 # Functions
 async def api_get(url):
@@ -21,6 +22,18 @@ async def api_get(url):
     except:
         return 'error'
 
+def sapi_get():
+
+    try:
+        resp = requests.get(sapi, timeout=30)
+        return resp.json()
+
+    except requests.exceptions.Timeout:
+        return 'timeout'
+
+    except:
+        return 'error'
+
 async def vote_check(delegate,share):
 
     del_info = await api_get(api + '/delegates/' + delegate)
@@ -31,7 +44,8 @@ async def vote_check(delegate,share):
     rank = del_info['data']['rank']
     reward = round(vote/(votes+vote)*422*share/100,2)
 
-    data.append([reward,share,rank,delegate])
+    if votes+vote < 2000000:
+        data.append([reward,share,rank,delegate])
 
 # Get and Check Argument
 if len(sys.argv) < 2:
@@ -43,6 +57,18 @@ if sys.argv[1].isdigit():
 else:
     print("Please make sure vote amount is an integer!")
     sys.exit()
+
+# Extract data from dutch team's api if enabled
+if use_api:
+    print("\nGetting Dutch Team's Delegate Sharing Data...\n")
+    delegates = {}
+    share_info = sapi_get()
+    if share_info == 'error' or share_info == 'timeout':
+       print("API did not respond within the allotted time. Please try again or disable the API.")
+       sys.exit()
+    for delegate in share_info['delegates']:
+        if (abs(delegate['share'] - delegate['verifierResult']) < 2 or delegate['verifierResult'] > delegate['share']) and delegate['share'] >= 75:
+            delegates[delegate['username']] = delegate['share']
 
 # Initialize List
 tasks = []

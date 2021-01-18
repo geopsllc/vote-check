@@ -9,7 +9,7 @@ cd vote-check
 bash install.sh
 nano config.py
 ```
-- change config.py to adjust deelgates and sharing percentages
+- change config.py to adjust deelgate info and/or enable dutch team's api
 - run with ```python3 delcheck.py vote_amount```
 
 ## General
@@ -20,6 +20,11 @@ This is an ARK Vote Reward Calculator.
 - Async coded so api calls are made almost simultaneously.
 
 ## Changelog
+### 0.2
+
+- added option to use dutch team's api to pull and verify sharing %
+- ignores delegates with vote weight over 2M
+
 ### 0.1
 
 - initial release
