@@ -23,7 +23,7 @@ This is an ARK Vote Reward Calculator.
 ### 0.2
 
 - added option to use dutch team's api to pull and verify sharing %
-- ignores delegates with vote weight over 2M
+- ignores delegates with vote weight over 2M and ones sharing less than 75%
 
 ### 0.1
 
