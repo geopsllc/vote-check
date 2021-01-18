@@ -2,7 +2,7 @@
 # Leave only the delegates that you want to check!
 delegates = {
     'geops':80,
-    'deadlock':90,
+    'deadlock':80,
     'dutch_pool':85,
     'dev51':95,
     'bigfriendlymaniac':85,
@@ -16,7 +16,8 @@ delegates = {
     'kaos':85,
     'superskeuo':80,
     'arktoshi':75,
-    'goose':75
+    'goose':75,
+    'cryptology':85
 }
 
 # Network API
