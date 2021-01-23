@@ -10,7 +10,7 @@ bash install.sh
 nano config.py
 ```
 - change config.py to adjust deelgate info and/or enable dutch team's api
-- run with ```python3 delcheck.py vote_amount```
+- run with ```python3 votecheck.py vote_amount```
 
 ## General
 
