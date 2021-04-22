@@ -6,7 +6,7 @@ use_api = False
 # This list is only used if use_api is set to False!
 delegates = {
     'geops':80,
-    'deadlock':80,
+    'deadlock':85,
     'dutch_pool':85,
     'dev51':95,
     'bigfriendlymaniac':85,
