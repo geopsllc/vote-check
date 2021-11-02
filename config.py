@@ -10,17 +10,19 @@ delegates = {
     'dutch_pool':85,
     'dev51':95,
     'bigfriendlymaniac':85,
-    'barometer_delegate':91,
-    'calidelegate':90,
     'ghostfaceuk':80,
     'thefoundry':80,
     'blues_for_alice':85,
-    'arkworld':80,
-    'arkship':80,
     'kaos':85,
     'superskeuo':80,
     'arktoshi':75,
     'goose':75,
+    'nft':85,
+    'qredit':80,
+    'promotor':80,
+    'kolap':80,
+    'umbrella':90,
+    'echo':80,
     'cryptology':85
 }
 
