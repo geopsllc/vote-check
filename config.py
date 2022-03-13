@@ -18,7 +18,7 @@ delegates = {
     'arktoshi':75,
     'goose':75,
     'nft':85,
-    'qredit':80,
+    'sudo':99,
     'promotor':80,
     'kolap':80,
     'umbrella':90,
