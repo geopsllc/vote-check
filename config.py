@@ -20,7 +20,7 @@ delegates = {
     'nft':85,
     'sudo':99,
     'promotor':80,
-    'kolap':80,
+    'barometer_delegate':91,
     'umbrella':90,
     'echo':80,
     'cryptology':85
